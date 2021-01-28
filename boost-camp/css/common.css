@@ -45,9 +45,10 @@ a:link{
 section{
     text-align: center;
 }
-.blind_desktop_320{display:none;} /*<br> issue */
-.blind_desktop_1250{display:none;} /*<br> issue */
-.blind_desktop_768{display:none;} /*<br> issue */
+/*<br> issue */
+.blind_desktop_1250{display:none;}
+.blind_desktop_768{display:none;}
+.blind_desktop_414{ display: none;}
 
 /* main-menu */
 
@@ -583,6 +584,13 @@ background-image: url("../Img/IcoFooterSnsFacebook.svg");
         box-sizing: border-box;
         cursor: pointer;
       }
+    #section3{
+        height: 400px;
+    }
+    #section5{
+        height: 400px;
+    }
+    
 }
 
 
@@ -590,5 +598,8 @@ background-image: url("../Img/IcoFooterSnsFacebook.svg");
 @media screen and (max-width: 414px){
     .inner{
         padding: 0 20px;
+    }
+    .blind_desktop_414{
+        display: block;
     }
 }
