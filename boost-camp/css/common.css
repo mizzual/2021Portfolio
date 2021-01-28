@@ -50,6 +50,22 @@ section{
 .blind_desktop_768{display:none;} /*<br> issue */
 
 /* main-menu */
+
+#top-btn{
+    z-index: 999;
+    position: fixed;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    transition-duration: 0.2s;
+}
+.top-btn:hover{
+ opacity: 0.5;
+}
+
 header{ /* mobile gnb menu와 연결 */
     position: relative;
     z-index: 1;
@@ -107,7 +123,6 @@ nav #apply_btn:hover{
 #section1{
     background-image: url("../img/BgMainCont.svg"), linear-gradient(to bottom, #0f2027, #203a43 94%, #2c5364 100%);
     color: #fff;
-    height:80vh;
     height:800px;
 }
 #section1 .inner{
@@ -239,13 +254,10 @@ nav #apply_btn:hover{
 /* section3 */
 #section3{
     height: 720px;
-    background-image: url("../img/ImgOrgMain1.jpg");
-    background-position-y: -300px;
-    background-attachment: fixed;
+    background: url("../img/ImgOrgMain1.jpg") no-repeat fixed;
+    background-size: cover;
     position: relative;
-    margin-top: 90px;
 }
-
 #section3::before{
     content: "";
     display: block;
@@ -340,11 +352,9 @@ nav #apply_btn:hover{
 #section6{
     /* clear: both; */
     height: 720px;
-    background-image: url("../img/ImgOrgProgram01.jpg");
-    background-position-y: -300px;
-    background-attachment: fixed;
+    background: url("../img/ImgOrgProgram01.jpg" ) no-repeat fixed;
+    background-size: cover;
     position: relative;
-    margin-top: 90px;
 }
 #section6::before{
     content: "";
@@ -453,14 +463,13 @@ footer .sns a:nth-child(4){
 }
 
 
-
-/* 아이패드 768 */
+/* 768px */
 @media screen and (max-width: 768px){
     .blind_desktop_768{
         display:block;
     }
-    .blind_desktop_320{
-        display:block;
+    #s1_t3{
+        display: none;
     }
     #menuClose{
     position: fixed;
@@ -471,10 +480,10 @@ footer .sns a:nth-child(4){
     border: none;
     background-color: transparent;
     background-image: url("../img/mobile_close_menu.svg");
-}
-#menuClose:hover{
-    opacity: 0.5;
-}
+    }
+    #menuClose:hover{
+        opacity: 0.5;
+    }
     #back{
         background-color: rgba(0, 0, 0, 0.8);
         width: 100vw;
@@ -493,9 +502,7 @@ footer .sns a:nth-child(4){
         height: 100vh;
         width: 60;
         box-sizing: border-box;
-        /* 제이쿼리때문에 width 0으로 만들어줌 (왠지 모르게또...ㅠ) */
         padding: 80px 25px 25px 25px;
-        /* height:  */
         display:none;
     }
     nav ul li{
@@ -504,18 +511,18 @@ footer .sns a:nth-child(4){
         text-align: left;
     }
     #menuView{
-    display: block;
-    background-image: url("../img/mobile_menu.svg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-color: transparent;
-    border: none;
-    width: 36px;
-    height: 36px;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
+        display: block;
+        background-image: url("../img/mobile_menu.svg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        border: none;
+        width: 36px;
+        height: 36px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
     }
     #menuView:hover{
         opacity: 0.5;
@@ -539,64 +546,45 @@ footer .sns a:nth-child(4){
         color:#1babe9;
     }
     #section3{
-        height: 400px;
-          /* background-image: url("../img/ImgOrgMain1.jpg");
-        background-position-y: -300px;
-        background-attachment: fixed; */
+        /* height: 400px;
+        width: 100vh; */
     }
     #section6{
         height: 400px;}
     h2{
         font-size: 27px;
     }
-    @media screen and (max-width: 650px){
-        footer .sns{
-            display: none;
 
-        }
+    .top-btn{
+        width: 35px;
+        height: 35px;
     }
-  
+}
 
+/* 650px */
+@media screen and (max-width: 650px){
+    footer .sns{
+        display: none;
 
+    }
     #section1 h2{
-    /* border:12px solid green; */
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: url("../img/ImgMainTopTextMobilet.png");
-    }
-    #section1 #s1_t3{
-        bottom: 15%;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url("../img/ImgMainTopTextMobilet.png");
     }
     .float3 article{
         width:100%;
     }
-    
 }
-/* 모바일 414 */
+
+
+/* 414px */
 @media screen and (max-width: 414px){
-    
     .inner{
         padding: 0 20px;
     }
-    
     #section1 #s1_t2{
     display: none;
     }
-    #section1 #s1_t3{
-        display: none;
-        }
-}
-/* 모바일 최소 */
-@media screen and (max-width: 320px){
-    #section1 #s1_t1 a{
-    margin: 0px auto;
-    }
-    @keyframes ani1{
-        to{
-        opacity: 1;
-        margin: 10px auto;
-        }
-    }
-    
 }

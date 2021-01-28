@@ -1,5 +1,28 @@
+// top-button
+$(document).ready(function(){
+    // hide #toTop first
+    $("#top-btn").hide();
+  
+    // fade in #toTop
+    $(function () {
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+              $('#top-btn').fadeIn();
+          } else {
+              $('#top-btn').fadeOut();
+          }
+      });
+      // scroll body to 0px on click
+      $('#top-btn').click(function () {
+          $('body,html').animate({
+              scrollTop: 0
+          }, 800);
+          return false;
+      });
+    });
+  });
 
-
+// gnbMenu
 var myMenuClose = function(){
     $("#gnbMenu").hide();
     $("#back").hide();
