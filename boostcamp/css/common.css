@@ -582,14 +582,14 @@ background-image: url("../Img/IcoFooterSnsFacebook.svg");
       }
     #section3{
         height: 400px;
-        box-sizing: border-vbox;
+        box-sizing: border-box;
         /* width: 100vh; */
     }
 
     #section5{
         height: 400px;
         margin-bottom:90px;
-        box-sizing: border-vbox;
+        box-sizing: border-box;
         /* width: 100vh; */
     }
     
