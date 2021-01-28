@@ -204,14 +204,13 @@ nav #apply_btn:hover{
 
 
 /* #section2 */
-#section2 h2{
-    margin:90px 0;
-}
 #section2 article{
     height: 350px;
     background-repeat: no-repeat;
     display: inline-block;
     box-sizing: border-box;
+    
+    margin:0 0 50px 0;
 }
 #section2 article:nth-of-type(1)::before{
     content: "";
@@ -338,6 +337,9 @@ nav #apply_btn:hover{
 
 
 /* section5 */
+#section5 article{
+    margin-bottom: 90px;
+}
 #section5 article::before{
     content:"";
     display: inline-block;
@@ -352,7 +354,7 @@ nav #apply_btn:hover{
 #section6{
     /* clear: both; */
     height: 720px;
-    background: url("../img/ImgOrgProgram01.jpg" ) no-repeat fixed;
+    background: url("../img/ImgOrgProgram01.jpg" ) 50% 50% no-repeat fixed;
     background-size: cover;
     position: relative;
 }
@@ -549,8 +551,6 @@ footer .sns a:nth-child(4){
         /* height: 400px;
         width: 100vh; */
     }
-    #section6{
-        height: 400px;}
     h2{
         font-size: 27px;
     }
@@ -576,15 +576,19 @@ footer .sns a:nth-child(4){
     .float3 article{
         width:100%;
     }
+    #section4 article .pic {
+        height: 200px;
+        background-size: cover;
+        overflow: hidden;
+        box-sizing: border-box;
+        cursor: pointer;
+      }
 }
 
 
-/* 414px */
+/* 414px _ iphone */
 @media screen and (max-width: 414px){
     .inner{
         padding: 0 20px;
-    }
-    #section1 #s1_t2{
-    display: none;
     }
 }
