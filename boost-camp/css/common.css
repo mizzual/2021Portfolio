@@ -399,7 +399,7 @@ footer .sns{
     right: 0;
     top: 20px;
 }
-footer .sns > a{
+.sns > a{
     float: right;
     width: 30px;
     height: 30px;
@@ -408,19 +408,19 @@ footer .sns > a{
     transition: all ease 0.5s;
     padding-left: 10px;
 }
-footer .sns a:hover {
+.sns a:hover {
     transform: scale( 1.5 );
 }
-footer .sns a:nth-child(1){
+.sns a:nth-child(1){
 background-image: url("../Img/IcoFooterSnsFacebook.svg");
 }
-footer .sns a:nth-child(2){
+.sns a:nth-child(2){
     background-image: url("../Img/IcoFooterSnsInstagram.svg");
 }
-footer .sns a:nth-child(3){
+.sns a:nth-child(3){
     background-image: url("../Img/IcoFooterSnsNaver.svg");
 }
-footer .sns a:nth-child(4){
+.sns a:nth-child(4){
     background-image: url("../Img/IcoFooterSnsGit.svg");
 }
 
@@ -563,9 +563,9 @@ footer .sns a:nth-child(4){
 
 /* 650px */
 @media screen and (max-width: 650px){
-    footer .sns{
-        display: none;
-
+    footer .sns > a{
+        width: 60%;
+        height: 60%;
     }
     #section1 h2{
         width: 80%;
