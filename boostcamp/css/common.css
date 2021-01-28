@@ -548,10 +548,6 @@ background-image: url("../Img/IcoFooterSnsFacebook.svg");
         background-color:#fff;
         color:#1babe9;
     }
-    #section3{
-        /* height: 400px;
-        width: 100vh; */
-    }
     h2{
         font-size: 27px;
     }
@@ -586,9 +582,13 @@ background-image: url("../Img/IcoFooterSnsFacebook.svg");
       }
     #section3{
         height: 400px;
+        width: 100vh;
     }
+
     #section5{
         height: 400px;
+        margin-bottom:90px;
+        width: 100vh;
     }
     
 }
