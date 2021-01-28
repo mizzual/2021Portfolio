@@ -6,13 +6,12 @@ body{font-family: 'Noto Sans KR', sans-serif;
 
 /* common-style */
 body, h1, h2, h3, h4, h5, h6, ul, ol, li, div, header, section{
-    margin: 0;box-sizing: border-box;}
+    margin: 0;box-sizing: border-box; word-break: keep-all;}
 a{text-decoration: none;color: black;}
 a:visited{text-decoration: none;}
 a:hover{text-decoration: none;}
 a:focus{text-decoration: none;}
 a:hover, a:active{text-decoration: none;}
-p{word-break: keep-all;}
 .blind {display:none;}
 .inner{
     width: 100%;
@@ -388,7 +387,7 @@ footer .sns{
     right: 0;
     top: 20px;
 }
-footer .sns a{
+footer .sns > a{
     float: right;
     width: 30px;
     height: 30px;
@@ -433,8 +432,17 @@ footer .sns a:nth-child(4){
        padding: 0 0 50px 0;
    }
 }
-/* 950px _  웹 950 여기서 스타일4가 존나이상해요 ㅠ 그리고 여기서부터 스타일4 사진높이랑 다 조절해야된다고미친존짜증난다고.. */ 
+/* 950px _ section4 우측 p태그 깨짐문제*/ 
 @media screen and (max-width: 950px){
+    #section4.float3 article{
+            width:100%;
+    }
+    #section4 article .pic {
+        height: 400px;
+        overflow: hidden;
+        box-sizing: border-box;
+        cursor: pointer;
+      }
 }
 /* 815px _ header nev 겹침문제*/
 @media screen and (max-width: 815px){
@@ -444,18 +452,14 @@ footer .sns a:nth-child(4){
     }
 }
 
-    /* #section4 .article-box h3{
-        font-size: 20px;
-    } */
- 
-
-
-/* pic 1250 */
 
 
 /* 아이패드 768 */
 @media screen and (max-width: 768px){
     .blind_desktop_768{
+        display:block;
+    }
+    .blind_desktop_320{
         display:block;
     }
     #menuClose{
@@ -479,7 +483,6 @@ footer .sns a:nth-child(4){
         top: 0;
         left: 0;
         display:none;
-        /* 포지션을 주기 전에는 로고가보이지만 포지션을 보고 맨 위로 올렸고, #inner 안에 들어가있어서 패딩값이 있는 것을 top과 left로 해제시켜줘버림 */
     }
     #gnbMenu{
         background-color:#1babe9;
@@ -500,17 +503,8 @@ footer .sns a:nth-child(4){
         font-size: 20px;
         text-align: left;
     }
-    /* nav #apply_btn{
-      color:#1babe9;
-        font-size: 1.3em;
-        display: block;
-        width: 100px;
-        text-align: center;
-        margin-top: 20px;
-    } */
     #menuView{
     display: block;
-    /* 나타나게하려고 디스플레이 블락을 하는것 */
     background-image: url("../img/mobile_menu.svg");
     background-size: 100%;
     background-repeat: no-repeat;
@@ -544,12 +538,24 @@ footer .sns a:nth-child(4){
         background-color:#fff;
         color:#1babe9;
     }
-        
+    #section3{
+        height: 400px;
+          /* background-image: url("../img/ImgOrgMain1.jpg");
+        background-position-y: -300px;
+        background-attachment: fixed; */
+    }
+    #section6{
+        height: 400px;}
+    h2{
+        font-size: 27px;
+    }
     @media screen and (max-width: 650px){
         footer .sns{
             display: none;
+
         }
     }
+  
 
 
     #section1 h2{
@@ -580,13 +586,6 @@ footer .sns a:nth-child(4){
     #section1 #s1_t3{
         display: none;
         }
-
-    #section4 article .pic {
-        height: 200px;
-        overflow: hidden;
-        box-sizing: border-box;
-        cursor: pointer;
-      }
 }
 /* 모바일 최소 */
 @media screen and (max-width: 320px){
@@ -598,9 +597,6 @@ footer .sns a:nth-child(4){
         opacity: 1;
         margin: 10px auto;
         }
-    }
-    .blind_desktop_320{
-        display:block;
     }
     
 }
