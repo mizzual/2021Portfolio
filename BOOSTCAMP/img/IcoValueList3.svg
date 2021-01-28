@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="67.104" height="64" viewBox="0 0 67.104 64">
+    <defs>
+        <style>
+            .prefix__cls-2,.prefix__cls-3{fill:none}.prefix__cls-2,.prefix__cls-3,.prefix__cls-5{stroke:#1e1e1e;stroke-width:2px}.prefix__cls-2{stroke-dasharray:2}.prefix__cls-2,.prefix__cls-3{fill-rule:evenodd}.prefix__cls-5{fill:#fff}
+        </style>
+    </defs>
+    <g id="prefix__img_about_03" transform="translate(-.448)">
+        <g id="prefix__Artboard" transform="translate(-317 -671)">
+            <g id="prefix___01" data-name="1" transform="translate(318 671)">
+                <path id="prefix__Rectangle" d="M0 0H64V64H0z" transform="translate(1)" style="fill:none"/>
+                <path id="prefix__Path" d="M34.064 43.814V52.4h-27v-8.926" class="prefix__cls-2" transform="rotate(45 20.563 47.936)"/>
+                <path id="prefix__Path-2" d="M26.035 51.332V19.757a13.5 13.5 0 1 1 27 0v31.915" class="prefix__cls-3" data-name="Path" transform="rotate(45 39.535 28.965)"/>
+                <path id="prefix__Path-3" d="M59.044 43.859v8.495h-27v-8.619" class="prefix__cls-2" data-name="Path" transform="rotate(-45 45.545 48.045)"/>
+                <path id="prefix__Path-4" d="M13 51.625V19.744a13.5 13.5 0 1 1 27 0v32.005" class="prefix__cls-3" data-name="Path" transform="rotate(-45 26.497 28.997)"/>
+                <rect id="prefix__Rectangle-2" width="8" height="8" data-name="Rectangle" rx="4" transform="translate(10 31)" style="fill:#0078ff;stroke:#1e1e1e;stroke-width:2px"/>
+                <rect id="prefix__Rectangle-3" width="8" height="8" class="prefix__cls-5" data-name="Rectangle" rx="4" transform="translate(51 9)"/>
+                <path id="prefix__Rectangle-4" d="M0 0H8V8H0z" class="prefix__cls-5" data-name="Rectangle" transform="translate(39 21)"/>
+            </g>
+        </g>
+    </g>
+</svg>

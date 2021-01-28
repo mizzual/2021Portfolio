@@ -1,0 +1,116 @@
+body, h1, h2, p {
+    margin: 0;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    color: orange;
+}
+em {
+    font-style: normal;
+}
+h1 a {
+    /* border: 2px solid black; */
+    background-image: url("../img/logo_blue.svg");
+    background-repeat: no-repeat;
+    font-size: 0;
+    width: 117px;
+    height: 45px;
+    float: left;
+    margin-top: 20px;
+}
+h2 {
+    clear: both;
+}
+.blind {
+    display: none;
+}
+.inner {
+    /* border: 2px solid red; */
+    width: 1200px;
+    margin: 0 auto;
+}
+header {
+    position: relative;
+    z-index: 1;
+}
+nav {
+    /* border: 2px solid orange; */
+    float: right;
+    margin-top: 20px;
+}
+nav ul {
+    /* border: 2px solid green; */
+    padding-left: 0;
+    text-align: right;
+    display: inline-block;
+    margin: 0;
+}
+nav li {
+    /* border: 2px solid blue; */
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+}
+#btn_apply {
+    padding: 10px 20px;
+    background-color: white;
+    color:#5a96ff;
+    border-radius: 20px;
+    font-weight: bold;
+}
+#btn_apply:hover {
+    background-color:#5a96ff;
+    color: white;
+}
+#section1 {
+    /* background-color: pink; */
+    background-image: url(../img/BgMainCont.svg), linear-gradient(to bottom, #171717, #19181c 87%, #241e42 97%, #5a96fc 104%);
+    /* background-image: linear-gradient(to bottom, red , blue 87%, yellow 97%, red 104%); */
+    height: 796px;
+    color: white;
+    position: relative;
+}
+#section1 h2 {
+    /* border: 2px solid yellow; */
+    width: 504px;
+    height: 285px;
+    /* margin: 0 auto; */
+    background-image: url(../img/ImgMainTopText.png);
+    background-size: contain;
+    font-size: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -252px;
+    margin-top: -142px;
+}
+#section1 #btn_apply2 {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    margin-left: -55px;
+    /* border: 2px solid yellow; */
+    width: 110px;
+    background-image: url("../img/IcoApplyArrow.svg");
+    background-repeat: no-repeat;
+    /* background-position-x: right; */
+    color:#5a96ff;
+    text-align: right;
+    font-weight: bold;
+}
+#section1 #btn_apply2:hover {
+    text-decoration: underline;
+}
+#section1 #text1 {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+#section1 #text2 {
+    position: absolute;
+    bottom: 20%;
+    right: 20%;
+}

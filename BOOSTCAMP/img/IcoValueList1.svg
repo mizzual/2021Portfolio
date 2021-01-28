@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefix__img_about_01" width="64" height="64" viewBox="0 0 64 64">
+    <defs>
+        <style>
+            .prefix__cls-4{stroke:#1e1e1e;stroke-width:2px;fill:#fff}
+        </style>
+    </defs>
+    <g id="prefix__Artboard" transform="translate(-153 -673)">
+        <g id="prefix___01" data-name="1" transform="translate(153 673)">
+            <path id="prefix__Rectangle" d="M0 0H64V64H0z" style="fill:none"/>
+            <path id="prefix__Rectangle-2" d="M5 9l32-4v54L5 55z" data-name="Rectangle" style="fill-rule:evenodd;stroke:#1e1e1e;stroke-width:2px;fill:none"/>
+            <path id="prefix__Rectangle-3" d="M0 0H22V46H0z" data-name="Rectangle" transform="translate(37 9)" style="stroke:#1e1e1e;stroke-width:2px;fill:none"/>
+            <path id="prefix__Rectangle-4" d="M0 0H8V8H0z" class="prefix__cls-4" data-name="Rectangle" transform="translate(33 1)"/>
+            <rect id="prefix__Rectangle-5" width="8" height="8" class="prefix__cls-4" data-name="Rectangle" rx="4" transform="translate(1 5)"/>
+            <rect id="prefix__Rectangle-6" width="8" height="8" class="prefix__cls-4" data-name="Rectangle" rx="4" transform="translate(55 5)"/>
+            <rect id="prefix__Rectangle-7" width="8" height="8" class="prefix__cls-4" data-name="Rectangle" rx="4" transform="translate(55 51)"/>
+            <path id="prefix__Path" d="M0 0L13 0" transform="translate(24 32)" style="stroke-dasharray:2;stroke:#1e1e1e;stroke-width:2px;fill:none"/>
+            <rect id="prefix__Rectangle-Copy-2" width="8" height="8" class="prefix__cls-4" rx="4" transform="translate(1 51)"/>
+            <rect id="prefix__Rectangle-Copy" width="8" height="8" rx="4" transform="translate(33 28)" style="fill:#0078ff;stroke:#1e1e1e;stroke-width:2px"/>
+        </g>
+    </g>
+</svg>

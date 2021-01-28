@@ -1,0 +1,93 @@
+/*-------------------FONT STYLE------------------*/
+html{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+/* 공통폰트_KOR*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+.Thin {font-weight: 100;}
+.Light {font-weight: 300;}
+.Regular {font-weight: 400;}
+.Medium {font-weight: 500;}
+.Bold {font-weight: 700;}
+.Black {font-weight: 900;}
+/* 공통폰트_ENG*/
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+.RegularViga {font-weight: 400;}
+
+/*-------------------BASIC STYLE------------------*/
+html,body, h1, h2, h3, h4, h5, h6, ul, ol, li, div, header, section {
+    margin: 0;
+    box-sizing: border-box;
+    word-break: keep-all;
+}
+a { text-decoration: none; color: black; }
+    a:visited { text-decoration: none; }
+    a:hover { text-decoration: none; }
+    a:focus { text-decoration: none; }
+    a:hover, a:active { text-decoration: none; }
+.inner{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+.blind{
+    display: none;
+}
+
+/*-------------------HEADER------------------*/
+#section1{
+    background: url(../img/background.jpg) center 0 no-repeat;
+    background-size: cover;
+    height: 800px;
+}
+/*-popup-*/
+header .covidPopup{
+    background-color: #c94e1d;
+    text-align: center;
+    font-size: 12px;
+    padding: 3px 0;
+}
+header .covidPopup a{
+    color: #fff;
+}
+header .covidPopup a:hover{
+    opacity: 0.3;
+}
+/*-bookingbox-*/
+header .bookingWrap{
+    margin-top: 30px 0px 30px;
+    padding: 50px;
+    width: 50%;
+    border: 2px solid red;
+}
+
+/*-------------------SECTION1------------------*/
+/* #section1{
+    background-image: url(../img/background.jpg);
+    width: 100%;
+    height: 800px;
+    background-size: cover;
+    position: relative;
+} */
+/*-------------------SECTION2------------------*/
+/*-------------------SECTION3------------------*/
+/*-------------------SECTION4------------------*/
+/*-------------------FOOTER------------------*/
+
+/*-------------------mediaQuery------------------*/
+/* @media screen and (max-width: 1440px); */
+/* @media screen and (max-width: 1440px); */
+/* @media screen and (max-width: 1024px); */
+/* @media screen and (max-width: 800px); */
+/* @media screen and (max-width: 768px); */
+/* @media screen and (max-width: 600px); */
+/* @media screen and (max-width: 480px); */
+/* @media screen and (max-width: 320px); */
+
+/*-------------------ICON------------------*/
+.icon, .ico:before, .ico:after {background-image: url(../img/ico.png); background-repeat: no-repeat; display: inline-block; vertical-align:middle;}
+
+.ico:before, .ico:after { content:''; }
+
+.i-main{background-position:0 0; width: 160px; height: 50px; margin-top: 20px;}

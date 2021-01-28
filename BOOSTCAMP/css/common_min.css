@@ -1,0 +1,34 @@
+/* 모바일 작은버전-공통 */
+body{background-color: black;
+}
+@media screen and (min-width: 375px){
+    body{background-color: red;}
+}
+
+/* 아이폰 6/7/8 */
+@media screen and (min-width: 414px){
+    body{background-color: orange;}}
+
+/*아이폰 6/7/8 + */
+@media screen and (min-width: 768px){
+    body{background-color: yellow;}}
+
+/* 아이패드 세로 */
+@media screen and (min-width: 1024px){
+    body{background-color: green;}}
+
+/* 아이패드 가로 */
+@media screen and (min-width: 1280px){
+    body{background-color: skyblue;}}
+
+/* 노트북 */
+@media screen and (min-width: 1440px){
+    body{background-color: blue;}}
+
+/* 데스크탑 */
+@media screen and (min-width: 1600px){
+    body{background-color: purple;}}
+
+/* 대형데스크탑 */
+@media screen and (min-width: 1920px){
+    body{background-color: pink;}}

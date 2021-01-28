@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefix__img_about_02" width="64" height="64" viewBox="0 0 64 64">
+    <defs>
+        <style>
+            .prefix__cls-2,.prefix__cls-3,.prefix__cls-4{fill:none}.prefix__cls-2,.prefix__cls-3,.prefix__cls-4,.prefix__cls-5{stroke:#1e1e1e;stroke-width:2px}.prefix__cls-2{stroke-dasharray:2}.prefix__cls-3{fill-rule:evenodd}.prefix__cls-5{fill:#fff}
+        </style>
+    </defs>
+    <g id="prefix__Artboard" transform="translate(-103 -856)">
+        <g id="prefix___01" data-name="1" transform="translate(103 856)">
+            <path id="prefix__Rectangle" d="M0 0H64V64H0z" style="fill:none"/>
+            <path id="prefix__Path" d="M0 0L18 0" class="prefix__cls-2" transform="translate(5 41)"/>
+            <path id="prefix__Path-2" d="M23 41v18H5V41" class="prefix__cls-3" data-name="Path"/>
+            <g id="prefix__Group-2" transform="translate(41 5)">
+                <path id="prefix__Path-3" d="M0 0L0 18" class="prefix__cls-2" data-name="Path" transform="translate(18)"/>
+                <path id="prefix__Path-4" d="M18 18H0V0h18" class="prefix__cls-3" data-name="Path"/>
+            </g>
+            <path id="prefix__Rectangle-2" d="M0 0H36V18H0z" class="prefix__cls-4" data-name="Rectangle" transform="translate(23 23)"/>
+            <path id="prefix__Rectangle-3" d="M0 0H36V18H0z" class="prefix__cls-4" data-name="Rectangle" transform="translate(23 41)"/>
+            <path id="prefix__Rectangle-4" d="M0 0H8V8H0z" class="prefix__cls-5" data-name="Rectangle" transform="translate(37 19)"/>
+            <rect id="prefix__Rectangle-5" width="8" height="8" class="prefix__cls-5" data-name="Rectangle" rx="4" transform="translate(55 37)"/>
+            <rect id="prefix__Rectangle-6" width="8" height="8" class="prefix__cls-5" data-name="Rectangle" rx="4" transform="translate(55 1)"/>
+            <rect id="prefix__Rectangle-7" width="8" height="8" data-name="Rectangle" rx="4" transform="translate(19 55)" style="fill:#0078ff;stroke:#1e1e1e;stroke-width:2px"/>
+            <rect id="prefix__Rectangle-Copy-2" width="8" height="8" class="prefix__cls-5" rx="4" transform="translate(1 55)"/>
+        </g>
+    </g>
+</svg>

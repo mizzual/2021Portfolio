@@ -1,0 +1,99 @@
+/* ----------- font-family ----------- */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+html{font-family: 'Noto Sans Kr', sans-serif;}
+/* font-family: 'Libre Baskerville', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+.font-libre{
+    font-family: 'Libre Baskerville', serif;
+}
+/* ----------- common ----------- */
+.wrap{}
+.inner{
+    width: 1240px;
+    margin: 0 auto;
+}
+.inner:after{/* float를 해제하기 위한 clear처리 */
+    content:'';
+    display: block;
+    clear: both;
+}
+.hidden{
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+    font-size: 1px;
+    overflow: hidden;
+    text-indent: -999px;
+    color: transparent;
+    line-height: 0;
+}
+.txt-hide{
+    display: none;
+}
+button{
+    border: 0;
+    outline: 0;
+    background-color:transparent;
+}
+
+/* ----------- header ----------- */
+.pop-up{
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+    padding: 3px 0 3px;
+}
+.header{
+    background-color: rgb(185, 185, 185);
+    height: 80px;
+    overflow: hidden;
+}
+.header h1 img{                       /* 오호라 로고 */
+    width: 130px;
+    height: 80px;
+    padding: 0 15px;
+    /* padding: 10px 10px 10px 10px; */
+    background-size: cover;
+    float: left;
+    margin-right: 30px;
+}
+  
+.header .front-gnb .btn-gnb-close{
+    display: none;
+}
+.header .front-gnb .btn-gnb-ham{
+    background-image:url(../img/icon_ham.svg);
+    width: 35px;
+    height: 35px;
+    float: left;
+     margin-top: 23px;
+    margin-right: 25px;
+}
+
+.header .gnb{}
+.header .gnb .navi li > a{
+    display: inline-block;
+    font-size: 16px;
+    float: left;
+    padding: 32px 15px 32px 15px;
+    /* margin-top: 20px; */
+}
+.header .gnb .user-setting > div{
+    opacity: 0.7;
+    float: right;
+    width: 25px;
+    height: 25px;
+    margin: 28px 0 27px 10px;
+}
+.header .gnb .user-setting > div > a{
+    /* 얜그냥끝해당사항없다공 */
+}
+.header .gnb .user-setting  div:nth-child(1){
+    background-image: url("../img/icon_cart.svg");
+}
+.header .gnb .user-setting  div:nth-child(2){
+    background-image: url("../img/icon_user.svg");
+}
+.header .gnb .user-setting  div:nth-child(3){
+    background-image: url("../img/icon_search.svg");
+}

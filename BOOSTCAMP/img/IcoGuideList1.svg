@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefix__img_guide_01" width="147" height="88.5" viewBox="0 0 147 88.5">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:none}.prefix__cls-1,.prefix__cls-5,.prefix__cls-6{stroke:#1e1e1e;stroke-width:2px}.prefix__cls-4{fill:#1e1e1e}.prefix__cls-5{fill:#5a96ff}.prefix__cls-6{fill:#fff}
+        </style>
+    </defs>
+    <g id="prefix__Artboard" transform="translate(-672 -288)">
+        <g id="prefix___12" data-name="12" transform="translate(672 288)">
+            <path id="prefix__Rectangle" d="M0 0H102V12H0z" class="prefix__cls-1" transform="translate(5 5)"/>
+            <path id="prefix__Rectangle-2" d="M0 0H102V66H0z" class="prefix__cls-1" data-name="Rectangle" transform="translate(5 17)"/>
+            <path id="prefix__Path" d="M0 0L0 66" transform="translate(32 17)" style="stroke-dasharray:2;stroke:#1e1e1e;stroke-width:2px;fill:none"/>
+            <path id="prefix___-g-Apple_BI_Black_20_24" d="M117.407 40.26c2.424 0 6.973-3.225 11.756-2.752a14.478 14.478 0 0 1 11.229 5.95c-.29.176-6.708 3.825-6.634 11.42.083 9.078 8.151 12.1 8.243 12.14a32.8 32.8 0 0 1-4.252 8.534c-2.562 3.655-5.212 7.3-9.4 7.367-4.112.076-5.436-2.379-10.136-2.379s-6.168 2.308-10.058 2.46c-4.04.148-7.114-3.951-9.693-7.592-5.276-7.448-9.305-21.049-3.893-30.233a15.082 15.082 0 0 1 12.706-7.519c3.963-.076 7.709 2.604 10.132 2.604zM129.223 23a13.01 13.01 0 0 1-3.193 9.581c-2.146 2.535-5.665 4.508-9.108 4.247-.47-3.445 1.269-7.035 3.256-9.281A13.892 13.892 0 0 1 129.223 23z" data-name="-g-Apple_BI_Black_20_24" style="fill-rule:evenodd;stroke:#1e1e1e;stroke-width:2px;fill:none"/>
+            <path id="prefix__Rectangle-3" d="M0 0H4V2H0z" class="prefix__cls-4" data-name="Rectangle" transform="translate(26 10)"/>
+            <path id="prefix__Rectangle-4" d="M0 0H4V2H0z" class="prefix__cls-4" data-name="Rectangle" transform="translate(10 10)"/>
+            <path id="prefix__Rectangle-5" d="M0 0H4V2H0z" class="prefix__cls-4" data-name="Rectangle" transform="translate(18 10)"/>
+            <path id="prefix__Rectangle-6" d="M0 0H8V8H0z" class="prefix__cls-5" data-name="Rectangle" transform="translate(28 32)"/>
+            <rect id="prefix__Rectangle-7" width="8" height="8" class="prefix__cls-6" data-name="Rectangle" rx="4" transform="translate(1 1)"/>
+            <rect id="prefix__Rectangle-8" width="8" height="8" class="prefix__cls-6" data-name="Rectangle" rx="4" transform="translate(103 1)"/>
+            <rect id="prefix__Rectangle-9" width="8" height="8" class="prefix__cls-5" data-name="Rectangle" rx="4" transform="translate(103 79)"/>
+            <rect id="prefix__Rectangle-10" width="8" height="8" class="prefix__cls-6" data-name="Rectangle" rx="4" transform="translate(103 33)"/>
+            <rect id="prefix__Rectangle-11" width="8" height="8" class="prefix__cls-6" data-name="Rectangle" rx="4" transform="translate(138 63)"/>
+            <rect id="prefix__Rectangle-Copy-2" width="8" height="8" class="prefix__cls-6" rx="4" transform="translate(1 79.5)"/>
+            <rect id="prefix__Rectangle-Copy" width="8" height="8" class="prefix__cls-6" rx="4" transform="translate(28 79.5)"/>
+        </g>
+    </g>
+</svg>

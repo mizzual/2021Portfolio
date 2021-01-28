@@ -1,0 +1,194 @@
+/*------------common------------ */
+
+/* font-ENG / font-family: 'Fredoka One', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+.fredoka{
+    font-family: 'Fredoka One', cursive;
+}
+
+/* font-KOR / font-family: 'Noto Sans Kr', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+html{font-family: 'Noto Sans Kr', sans-serif;}
+
+@font-face {
+    font-family: 'BRBA_B';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/BRBA_B.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.bera{
+    font-family: 'BRBA_B';
+}
+
+.inner{
+    width:1200px;
+    margin:0 auto;
+}
+/* top-area */
+#header{
+    min-width: 1200px;
+    background: url("../img/bg_header.gif") 50% 0 repeat-x;
+    border-top:3px solid #ff7c98; 
+    border-bottom:1px solid #e2d9d6; 
+}
+#header .inner-header{}
+#header .top-area{
+    border-bottom: 1px solid #e2d9d6;
+}
+
+#header .top-area:after{
+    content: '';
+    display: none;
+    border: 1px solid #333;
+    position: relative;
+}
+    
+#header .top-area .inner{
+    position: relative;
+    height: 114px;
+    padding-top: 21px;
+    margin: 0 auto;
+}
+#header .logo{
+    width: 92px;
+    height: 92px;
+    margin: 0 auto;
+}
+#header .logo > a{
+    background: url("../img/main_logo.svg") no-repeat;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-indent: -9999px;
+}
+#header .sns, .etc{
+    position: absolute;
+    top: 50px;
+}
+#header .sns ul{
+    text-align: center;
+}
+#header .sns li{
+    display: inline-block;
+    padding-right:10px;
+}
+#header .sns li > a > img{
+    transition: all ease 0.3s;
+}
+#header .sns li > a >img:hover{
+    transform: scale(1.25);
+}
+#header .etc{
+    top: 39px;
+    right: 0;
+    height: 54px;
+    line-height: 54px;
+}
+#header .etc li{
+    float: left;
+    padding-left: 20px;
+    font-size: 11px;
+}
+#header .etc li >  a{
+    color: #4a3d39;
+    transform: skew(0.05deg);
+}
+/* menu-area */
+
+
+
+#header .member{
+}
+#header .member li{
+    display: block;
+    height: 46px;
+    float:left;
+    padding: 0 20px;
+    line-height:46px;
+}
+#header .member li > a{
+
+
+}
+#header .member .login > a{
+    color:#ff7c98
+}
+#header .member .join > a{
+    color: #4a3d39;
+}
+.minjeong{
+    width: 1200px;
+    height: 100px;
+    box-sizing: border-box;
+}
+/* menu-area #gnb */
+#gnb{float: right;
+    border: 1px solid red;
+    clear: none;
+}
+/* #gnb .gnb_wrap > ul:after{
+    content:'';
+    display:table;
+    clear:both;
+} */
+#gnb .gnb-wrap > ul > li{
+    float:left;
+    position:relative;
+    text-align: center;
+}
+#gnb .gnb-main > a{
+    display:block;
+    box-sizing: border-box;
+    height:46px;
+    line-height:46px;
+    padding: 0 40px;
+}
+#gnb .gnb-flavor .gnb-sub a{right:0;}
+#gnb .gnb-menu .gnb-sub{right:0;}
+#gnb .gnb-nutrition .gnb-sub{right:0;}
+#gnb .gnb-event .gnb-sub{right:0;}
+#gnb .gnb-store .gnb-sub{right:0;}
+#gnb .gnb-about .gnb-sub {right:0;
+}
+#gnb .gnb-sub {
+    /* overflow:hidden; */
+    position:absolute;
+    top:100%; left:0; 
+
+    z-index:999;
+    font-size:14px;
+    /* -webkit-transition:height .5s ease; */
+    /* transition:height .5s ease; */
+}
+#gnb .gnb-sub li{
+    padding-bottom: 3px;
+}
+#gnb .gnb-sub li:first-child {
+    margin-top:30px;
+}
+#gnb .gnb-sub a {
+    border: 1px solid blue;
+    display:block;
+    padding:3px 0; 
+    color:#7b7b7b;
+    /* opacity:0;  */
+    /* text-transform:uppercase;  */
+    /* -webkit-transition:opacity .3s linear; transition:opacity .3s linear; */
+}
+
+#gnb .gnb-bg img{
+    position: absolute;
+}
+
+#gnb .gnb-bg div {position: absolute;width:1200px; height:204px; margin:0 auto; background:url(../img/img_happypoint_app.jpg) no-repeat 0 65px;} */
+#gnb:hover .gnb-sub,
+#gnb:hover .gnb-bg {height:275px;}
+#gnb:hover .gnb-bg {margin-top:1px;}
+#gnb:hover .gnb-sub {overflow:visible;}
+#gnb:hover .gnb-sub a {color:#948780; opacity:1; -webkit-transition:opacity .5s linear; transition:opacity .5s linear;}
+#gnb:hover .gnb-sub a:hover {color:#ff75ac;}
+#gnb:hover .gnb-flavor .gnb-sub {margin-left:-44px; opacity:1; -webkit-transition-delay:.3s; transition-delay:.3s;}
+/* border: 1px solid red;*/
+
+                                
+<img src="img/img_happypoint_app.jpg">

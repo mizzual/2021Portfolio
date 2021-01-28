@@ -1,0 +1,87 @@
+/* container */
+.container{
+    background: #EDEDED;
+    height: 850px;
+    overflow: hiden;
+    /* padding-bottom:50px; */
+}
+.container .section+ .section{
+    /* border: 10px solid red; */
+}
+/* rolling page */
+.section.visual{
+    position: relative;
+}
+.section.visual .bx-controls-direction a:nth-child(1){
+    border: 100px solid red;
+    background: url(../img/icon_left.png);
+}
+.section.visual .bx-controls-direction a:nth-child(2){
+    background-image: url(../img/icon_right.png);
+}
+.section.visual .bx-pager{
+    display: none;    
+}
+/* .section.visual .bx-wrapper .bx-next {
+    right: 10px;
+    background: url('../images/controls.png') no-repeat -43px -32px;
+  } */
+  /* .bx-wrapper .bx-next:hover,
+  .bx-wrapper .bx-next:focus {
+    background-position: -43px 0;
+  } */
+/* visual 텍스트 스타일 */
+.section.visual .unit .visual-msg{
+    /* border: 1px solid #333; */
+    padding: 280px 200px;
+    position: absolute;
+}
+.section.visual .unit .visual-msg > p:nth-child(1){
+    font-size: 40px;
+}
+.section.visual .unit .visual-msg > p:nth-child(2){
+    font-size: 32px;
+    padding-top: 20px;
+}
+.section.visual .unit .visual-msg > p:nth-child(3){
+    font-size: 20px;
+    padding-top: 20px;
+}
+/* 자세히보기 */
+.section.visual .unit .visual-detail{}
+
+/* 영문컬러 */
+.section.visual .unit01 .visual-msg > p:nth-child(1){color:#004939;}
+.section.visual .unit02 .visual-msg > p:nth-child(1){color: #ad7402;}
+.section.visual .unit03 .visual-msg > p:nth-child(1){color:#7e3941;}
+.section.visual .unit04 .visual-msg > p:nth-child(1){color: #053e74;}
+.section.visual .unit05 .visual-msg > p:nth-child(1){color: #702c61;}
+.section.visual .unit06 .visual-msg > p:nth-child(1){color:#02508c;}
+/* 비주얼이미지 */
+.section.visual .unit01{
+    background: url(../img/img_visual01.png) no-repeat center center;
+    height: 850px;
+}
+.section.visual .unit02{
+    background: url(../img/img_visual02.png) no-repeat center center;
+    height: 850px;
+}
+.section.visual .unit03{
+    background: url(../img/img_visual03.png) no-repeat center center;
+    height: 850px;
+}
+.section.visual .unit04{
+    background: url(../img/img_visual04.png) no-repeat center center;
+    height: 850px;
+}
+.section.visual .unit05{
+    background: url(../img/img_visual05.png) no-repeat center center;
+    height: 850px;
+}
+.section.visual .unit05 .visual-msg{
+    margin-left: 180px;
+}
+.section.visual .unit06{
+    background: url(../img/img_visual06.png) no-repeat center center;
+    height: 850px;
+}

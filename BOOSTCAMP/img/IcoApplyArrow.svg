@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30.707" height="22.413" viewBox="0 0 30.707 22.413">
+    <defs>
+        <style>
+            .prefix__cls-2{fill:none;stroke:#5a96ff;stroke-linecap:square}
+        </style>
+    </defs>
+    <g id="prefix__arr" transform="translate(-690.5 -574.793)">
+        <path id="prefix__선_83" d="M0 0L30 0" data-name="선 83" transform="translate(690.5 586.5)" style="fill:none;stroke:#5a96ff"/>
+        <path id="prefix__선_84" d="M0 0L11 11" class="prefix__cls-2" data-name="선 84" transform="translate(709.5 575.5)"/>
+        <path id="prefix__선_85" d="M0 10L11 0" class="prefix__cls-2" data-name="선 85" transform="translate(709.5 586.5)"/>
+    </g>
+</svg>
