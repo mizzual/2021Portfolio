@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+	<link href="css/reset.css" rel="stylesheet" type="text/css" />
+	<link href="css/01_counter.css" rel="stylesheet" type="text/css" />
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script>
+		$(function(){
+			var countNum=0; //변수선언 현재카운트
+			var intervalVar; //카운팅되는 setInterval 제어 목적 변수
+			
+			//카운터시작
+			$(".btn_start").click(function(){
+				intervalVar = setInterval(function(){
+					countNum++;
+					console.log(countNum);
+					$(".txt_Number").text(countNum);
+				}, 1000);
+			});
+
+
+// -------------------------------------------------------------질문
+// start 버튼을 번복해서 누르면 누른 횟수만큼 변수에 값이 들어감,
+// start버튼 누르자마자 비활성화되고, 스톱, 리셋을 눌렀을 때 다시 활성화를 시킬 수 있는 방법
+//--------------------------------------------------------------리서치결과물
+//  버튼을 클릭했을때 버튼을 비활성화 시킴
+// 	$("#btn_id").bind("click", function(){
+// 	$("#btn_id").attr("disabled", true);
+
+// // 버튼이 비활성화 되어있다면 다시 활성화 시켜줌
+// 	if($("#btn_id").prop("disabled")==true){
+// 	$("#btn_id").attr("disabled", false);
+//   // <input type="button" id="'my_id" value="버튼" />
+
+// }	<input type="button" id="'my_id" value="버튼" />
+
+
+
+
+// <input type="button" id="'my_id" value="버튼" disabled="disabled" />
+
+			// $(".btn_start").click(function(){
+			// 	intervalVar = setInterval(function(){
+			// 		countNum++;
+			// 		console.log(countNum);
+			// 		$(".txt_Number").text(countNum);
+			// 	}, 1000);
+			// })
+			// $("#btn_star").bind("click", function(){
+			// $("#btn_id").attr("disabled", true);
+
+
+
+			//카운터스톱
+			$(".btn_stop").click(function(){
+				clearInterval(intervalVar);
+			});
+
+			//카운터리셋
+			$(".btn_reset").click(function(){
+				clearInterval(intervalVar);
+				countNum=0;
+				$(".txt_Number").text(countNum);
+			});
+
+		})
+	</script>
+</head>
+<body>
+	<div class="box_counter">
+	<div class="txt_Number">0</div>
+		<div class="box_btn">
+			<a href="javascript:" class="btn_start">START</a>
+			<a href="javascript:" class="btn_stop">STOP</a>
+			<a href="javascript:" class="btn_reset">RESET</a>
+		</div>
+	</div>
+</body>
+</html>

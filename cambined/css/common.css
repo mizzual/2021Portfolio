@@ -34,18 +34,16 @@ button{
     font-size: 11px;
     font-weight: 400;
 }
+.covid-popup > a:hover{
+    opacity: 0.5;
+}
 /* header */
 header{
     background: url("../img/img_mainbg.png")no-repeat fixed;
     position: relative;
     background-size: cover;
     background-position-y: -300px;
-    height: 800px;
-}
-header .main-menu{
-    position: absolute;
-    width: 1280px;
-    top: 0;
+    height: 750px;
 }
 header h1 > a{
     margin-top: 10px;
@@ -85,23 +83,115 @@ header #gnbMenu > ul .user:hover{
 }
 
 /* section1 */
-#section{
-    position: absolute;
-    width: 100px;
-    height: 100px;
+#section1{
+    border: 1px solid yellow;
+    height: 60px;
+    margin-top: 10px;
+}
+#section1 .booking::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+#section1 .book01, .book02, .book03{
+    float: left;
+    height: 60px;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid pink;
+}
+#section1 .book01{width: 250px;}
+#section1 .book02{width: 500px;}
+#section1 .book03{width: 250px;}
+
+
+#section1 .search{
+    float: right;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid pink;
+}
+
+/* 
+#section1 .booking > ul > li{
     border: 2px solid red;
 }
-#section .booking{}
-#section .book01{}
-#section .book01 ul{}
-#section .book01 ul li{}
-#section .book01 ul li > a{}
-#section .book01 ul li > a ul > li{}
-#section .book02{}
-#section .book02 ul{}
-#section .book02 ul li{}
-#section .book02 ul li > a{}
-#section .book02 ul li .none-accom{}
-#section .book02 ul li .none-accom h3{}
-#section .book02 ul li .none-accom {}
-#section .book02 ul li .day-accom{}
+#section1 .search{
+    background-color: #efa459;
+    float: right;
+}
+#section1 .booking.book01{
+    width: 100px;
+    height: 60px;
+}
+#section1 .booking.book02{
+    width: 10%;
+}
+#section1 .booking.book03{
+    border: 2px solid blue;
+    width: 10%;
+}
+#section1 .booking.search{
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    width: 60px;
+    float: right;
+    border-radius: 10px;
+}  */
+/*     
+    background: #efa459;
+    width: 60px;
+    border-radius: 10px;
+}
+#section1 .booking.search{
+    
+    float: right;
+    width: 40px;
+
+} */
+
+#section2{}
+#section2 .sec2-wrapper{}
+#section2 .sec2-wrapper .slider {
+    border: 2px solid pink;
+    text-align: center;
+}
+#section2 .sec2-wrapper .slider .pic{
+    display: inline-block;
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+ #section2 .sec2-wrapper .slider .pic img{
+    height: 100%;
+}
+#section2 .sec2-wrapper .slider p:nth-of-type(1){ /* 주소 */
+    font-size: 12px;
+    color: rgb(92, 92, 92);
+}
+#section2 .sec2-wrapper .slider p:nth-of-type(2){ /* 부대시설 */
+    font-size: 12px;
+}
+#section2 .sec2-wrapper .slider p:nth-of-type(3){ /* 금액 */
+
+}
+#section2 .sec2-wrapper .slider p:nth-of-type(3) b{  /* 금액강조 */
+
+}
+#section2 i > img{
+    width: 20px;
+    height: 20px;
+}
+
+footer{
+    background-color: #333;
+    height: 80px;
+}
+footer .cooper{
+    width: 50px;
+    border: 1px solid white;
+    float: left;
+
+}
