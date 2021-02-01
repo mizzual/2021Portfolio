@@ -1,7 +1,18 @@
 /* common */
-
-
-
+.inner{
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;   
+}
+.blind{
+  display: none;
+}
+button{
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
 /* fullpage nav */
 #fp-nav{}
 #fp-nav > ul{}
@@ -39,7 +50,39 @@
 
 
 /* section0 */
-#section0{
+#section0{}
+#section0 .sec0-header{
+  position: relative;
+  z-index: 100;
+  position: fixed;
+  top: 50px;
+  max-width: 1440px;
+  width: 100%;
+  float: left;
+}
+
+#section0 .sec0-header > p{  
+  position: absolute;
+  height: 20px;
+  font-weight: 400;
+  font-style: italic;
+  color: #fff;
+}
+#section0 .sec0-header .ico-mail{  
+  background: url("../img/ico_email.svg") no-repeat ;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 35px;
+  transition: all ease 0.3s;
+}
+#section0 .sec0-header .ico-mail:hover{
+  transform: scale(1.2) ;
+}
+
+
+
+#section0 .sec0-main{
   text-align: center;
 }
 .focus{
@@ -52,6 +95,15 @@
   font-weight: 500;
   font-style: italic;
   display: inline-block;
+  margin-top: -30px;
+  animation: focus-move 0.5s forwards;
+  opacity: 0;
+}
+@keyframes focus-move{
+  to{
+    opacity: 1;
+    margin-top: 0px;
+  }
 }
 .focus::before{
   content: "PUBLISHING";
@@ -70,7 +122,7 @@
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  animation: mask-move 3s linear infinite alternate;
+  animation: mask-move 4s linear infinite alternate;
 }
 .focus-mask{
   overflow: hidden;
@@ -80,11 +132,11 @@
   top: 0;
   left: 0;
   background-color: #b45151;
-  animation: mask-move 3s linear infinite alternate;
+  animation: mask-move 4s linear infinite alternate;
 }
 .focus-mask-inner{
   position: absolute;
-  animation: mask-inner-move 3s linear infinite alternate;
+  animation: mask-inner-move 4s linear infinite alternate;
 }
 @keyframes mask-move {
   0%{
@@ -103,9 +155,21 @@
   }
 }
 #section0 .txt{
-  font-family: 'Noto Sans KR', sans-serif;
   color: #fff;
-  transform: translateY(50px);
+  animation: txt 1s forwards;
+  animation-duration: 1s;
+  padding-top: 30px;
+  margin-bottom: -30px;
+  opacity: 0;
+}
+@keyframes txt{
+  to{
+    opacity: 1;
+    margin-bottom: 0;
+  }
+}
+#section0 .txt >p{
+  font-family: 'Noto Sans KR', sans-serif;
 }
 #section0 .txt >p:nth-of-type(2){
   padding: 15px;
@@ -113,3 +177,127 @@
   font-weight: 600;
   font-size: 1.5rem;
 }
+
+#section0 .scroll{
+  position: absolute;
+  background: url(../img/ico_press.svg) no-repeat;
+  width: 30px;
+  height: 30px;
+  bottom: 100px;
+  left: 50%;
+  animation: scroll 1.5s infinite;
+  animation-delay: 2s;
+  opacity: 0;
+}
+@keyframes scroll {
+  to{opacity: 1;}
+  0%{
+    transform: translateY(0);
+  }
+  100%{
+    transform: translateY(30px);
+  }
+}
+/************** mobile **************/
+@media screen and (max-width:650px){
+  #section0 .sec0-header{
+    top: 20px;
+  }
+  #section0 .sec0-main .focus{
+    font-size: 2.5rem;
+  }
+  .focus::after{
+    width: 50px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    }
+    .focus-mask{
+      width: 50px;
+    }
+    @keyframes mask-move {
+      0%{
+        transform: translateX(0);
+      }
+      100%{
+        transform: translate(210px);
+      }
+    }
+    @keyframes mask-inner-move{
+      0%{
+        transform: translateX(0);
+      }
+      100%{
+        transform: translate(-210px);
+      }
+    }
+    #section0 .txt{
+      font-size: 12px;;
+    }
+    #section0 .txt >p:nth-of-type(2){
+      font-size: 14px;;
+    }
+}
+
+#section1 {
+  position: relative;
+  background: url(../img/bg_sec1.png);
+  /* 선생님 도와주세욥.. */
+  /* 그라디언트 적용 안됨 */
+/* #section1{
+    background:linear-gradient
+    (to bottom,#b45151 , #b6e4fe);
+} */
+}
+#section1 .sec1-wrap{
+  position: absolute;
+  /* background: #fff; */
+  width: 100px;
+  height: 100px;
+  top: 0;
+}
+#section1 .sec1-nav{
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  max-width: 1440px;
+  border: 2px solid red;
+  margin-bottom: 30px;
+  text-align: center;
+  bottom: 0;
+}
+
+#section1 .sec1-nav{}
+#section1 .sec1-nav .sec1-intro{}
+#section1 .sec1-nav .sec1-prof{}
+#section1 .sec1-nav .sec1-expr{}
+/* #section1 .sec1-nav > a{
+  display: inline-block;
+  position: relative;
+  border-top: 40px solid rgba(255, 255, 255, 0.5);
+}
+#section1 .sec1-nav > a:before{
+  position: absolute;
+}
+#section1 .sec1-nav > a > span{
+  top: 0;
+} */
+/* #section1 .sec1-nav > div{
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  height: 30px;
+}
+#section1 .sec1-nav > a:before{
+  position: absolute;
+  content:'';
+  top: 0;
+} */
+/* #section1 .sec1-intro{
+  position: relative;
+}
+#section1 .sec1-intro > span{
+  position: absolute;
+} */
+#section1 .sec1-prof{}
+#section1 .sec1-expr{}
