@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body > div {
+    width:200px;
+    height:100px;
+    margin-top:50px;
+}
+
+div.div01 {
+    transform:perspective(.5em)
+    rotateX(5deg);
+    background:khaki;
+}
+div.tab {
+    position:relative;
+    display:inline-block;
+    padding: .5em 1em .35em;
+    color:white;
+}
+div.tab::before {
+    content:'';
+    position:absolute;
+    top:0; right:0; bottom:0; left:0;
+    z-index:-1;
+    background: orange;
+    transform:perspective(.5em) rotateX(5deg);
+}
+
+
+div03 {
+    transform:scaleY(1.3) perspective(.5em) rotateX(5deg);
+    background:violet;
+    transform-origin:bottom;
+}
+
+ul,li {
+    list-style:none;
+}
+
+li {
+    float:left;
+}
+
+nav  a {
+    position:relative;
+    display:inline-block;
+    padding:.3em 1em 0;
+}
+nav  a::before {
+    content:"";
+    position:absolute;
+    top:0;right:0;bottom:0;left:0;
+    z-index:-1;
+    background:orange;
+    background-image:linear-gradient(hsla(0,0%,100%,.6),
+    hsla(0,0%,100%,0));
+    border:1px solid rgba(0,0,0,.4);
+    border-bottom:none;
+    border-radius: .5em .5em 0 0;
+    box-shadow:0 .15em white inset;
+    transform:perspective(.5em) rotateX(5deg);
+    transform-origin: bottom;
+}
+</style>
+<body>
+    <div class="div01">trapezoid</div>01
+<div class="tab">trapezoid</div>02
+<div class="div03"></div>03 transform-origin:bottom 베이스를 고정하고 회전.
+
+
+<nav>
+    <ul>
+        <li><a href="#">item1</a></li>
+        <li><a href="#">item2</a></li>
+        <li><a href="#">item3</a></li>
+    </ul>
+</nav>
+</body>
+</html>
