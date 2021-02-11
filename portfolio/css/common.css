@@ -5,6 +5,9 @@ button{cursor: pointer;background-color: transparent; border: none;}
 .robo{
 	font-family: 'Roboto', sans-serif;
 }
+.sans{
+  font-family: 'Noto Sans KR', sans-serif;
+}
 /********** fullpage-nav**********/
 #fp-nav{}
 #fp-nav > ul{}
@@ -208,7 +211,7 @@ button{cursor: pointer;background-color: transparent; border: none;}
   justify-content: center;
   overflow: hidden;
 }
-  #section1 .sec1-bg .introduce{
+  #section1 .sec1-bg .info1{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -287,11 +290,9 @@ button{cursor: pointer;background-color: transparent; border: none;}
 #section1 .sec1-nav .sec1-expr{
   color: #9e9e9e;
 }
-#section1 .sec1-nav > a{
+#section1 .sec1-nav > ul > li > a{
+  float: left;
   position:relative;
-  display:inline-block;
-}
-#section1 .sec1-nav > a > span{
   display:inline-block;
   background: rgb(255, 255, 255);
   box-shadow: 8px 8px 8px rgba(0,0,0,.1);
@@ -300,6 +301,7 @@ button{cursor: pointer;background-color: transparent; border: none;}
   border-bottom-right-radius: 10px;
   width: 145px;
   margin: 0 10px;
+  left: 33%;
   font-size: 20px;
   font-weight: 800;
   font-style: italic;
@@ -403,10 +405,72 @@ button{cursor: pointer;background-color: transparent; border: none;}
 }
 
 /********** section3 **********/
-
+#section3 {
+  position: relative;
+  background:linear-gradient(to bottom,#98d3f3 , #e2dcd4);
+}
+#section3 .wrap-photo .slick-slide {
+  padding: 0 10px;
+  /* 선생님질문 active로 잡을 시 검은색 못생긴 아웃라인 생성.. outline: none; */
+}
 #section3 .wrap-photo .slick-slide img{
   width: 860px;
   height: 520px;
+  /* border-radius: 10px; */
+}
+#section3 .wrap-photo{
+  cursor: none;
+}
+#section3 .wrap-photo .cursor{
+  display: block;
+  background: red;
+  opacity: .5;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  position: absolute;
+  pointer-events: none;
+  transform: scale(0);
+  transition: transform .2s;
+}
+#section3 .wrap-photo:hover .cursor{
+  transform: scale(1);
+}
+#section3 .wrap-photo:active .cursor{
+  transform: scale(2);
+}
+#section3 .wrap-txt{
+  position: absolute;
+  top: 55%;
+  left: 0;
+  right: 0;
+  margin-top: 224px;
+  text-align: center;
+}
+#section3 .wrap-txt > ul{
+  position: relative;
+  height: 95px;
+  overflow: hidden;
+  /* background: red; */
+}
+#section3 .wrap-txt > ul > li{
+  color: #4b4f52;
+  font-size: 4rem;
+  font-weight:800;
+  font-style: italic;
+  position: absolute;
+  top: 95px;
+  width: 100%;
+  transition: top .5s ease-in-out;
+}
+#section3 .wrap-txt > ul > li > p{
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: normal;
+}
+#section3 .wrap-txt > ul > li.select{
+  top: 0;
 }
 
 
@@ -416,6 +480,117 @@ button{cursor: pointer;background-color: transparent; border: none;}
 
 
 
+
+/********** section4 **********/
+#section4 {
+  position: relative;
+}
+#section4 .sec4-pic > img{
+  position: absolute;
+  width: 200px;
+  left: 50%;
+  margin-left: -100px;
+  bottom: 40%;
+}
+#section4 .wrap-typo{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -180px 0 0 -1150px;
+}
+#section4 .wrap-typo .wrap-typo-inner{
+  position: relative;
+}
+#section4 .wrap-typo .wrap-typo-inner > span{
+  position: absolute;
+  display: inline-block;
+  font-size: 5rem;
+  font-weight: 800;
+	font-family: 'Roboto', sans-serif;
+  bottom: 100px;
+  transform:rotate(135deg);
+}
+#section4 .wrap-typo .wrap-typo-inner > span.ani-0{
+  animation:key_ani0 1.5s linear forwards;
+  motion-path: path("m1503.02245,447.5637c3.50135,7.06749 21.73921,-334.78377 -330.43592,-334.78377c-352.17513,0 -360.87081,330.43593 -363.88812,326.352");
+  offset-path: path("m1503.02245,447.5637c3.50135,7.06749 21.73921,-334.78377 -330.43592,-334.78377c-352.17513,0 -360.87081,330.43593 -363.88812,326.352");
+}
+@keyframes key_ani0{
+  0%{offset-distance:0%; opacity:1;}
+  100%{offset-distance:100%; opacity:0;}
+}
+#section4 .wrap-input{
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  bottom: 0;
+  background: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#section4 .wrap-input > form{
+  position: absolute;
+  margin-top: 0.7%;
+}
+#section4 .wrap-input > form .group{
+  position: relative;
+  font-weight: 200;
+  color: #fff;
+}
+#section4 .wrap-input > form .group > input{
+  color: #fff;
+  font-size: 1rem;
+  padding: 8px 0;
+  display: block;
+  width: 300px;
+  border: 0;
+  background-color: transparent;
+  border-bottom: 1px solid #757575;
+  outline: none;
+  margin-bottom: 30px;
+}
+#section4 .wrap-input > form .group > textarea{
+  width: 300px;
+  border: 1px solid #757575;
+  border-radius: 5px;
+  color: #fff;
+  background: transparent;
+  font-size: 1rem;
+  font-family: 'Noto Sans KR', sans-serif;
+  outline: none;
+  margin-top: 10px;
+}
+#section4 .wrap-input .btn{
+  outline: none;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: none;
+  padding: 8px;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 600;
+  color: #333;
+  background: #fff;
+}
+#section4 .wrap-input .btn:hover{
+  opacity: .5;
+}
+#section4 .wrap-input > form .group .highlight{}
+#section4 .wrap-input > form .group .bar{
+  position: relative;
+  display: block;
+  width: 300px;
+}
+#section4 .wrap-input > form .group > label{
+  color: #fff;
+  font-size: 1rem;
+  position: absolute;
+  left: 0px;
+  top: -20px;
+}
 
 
 
