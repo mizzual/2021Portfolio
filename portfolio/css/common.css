@@ -1,4 +1,7 @@
 /********** common **********/
+body{
+  word-break: keep-all;
+}
 .inner{width: 100%; max-width: 1024px; margin: 0 auto; padding: 0 20px;}
 .blind{display: none;}
 button{cursor: pointer;background-color: transparent; border: none;}
@@ -7,6 +10,9 @@ button{cursor: pointer;background-color: transparent; border: none;}
 }
 .sans{
   font-family: 'Noto Sans KR', sans-serif;
+}
+.mobile-br{
+  display: none;
 }
 /********** fullpage-nav**********/
 #fp-nav{}
@@ -41,30 +47,30 @@ button{cursor: pointer;background-color: transparent; border: none;}
 /********** section0 **********/
 
 /* section0-header */
-#section0{}
-#section0 .sec0-header{
+#section0{
   position: relative;
+}
+#section0 .sec0-header{
+  position: absolute;
   z-index: 100;
-  position: fixed;
   top: 50px;
-  max-width: 1440px;
   width: 100%;
-  float: left;
+  top: 50px;
 }
 #section0 .sec0-header > p{  
   position: absolute;
-  height: 20px;
   font-weight: 400;
   font-style: italic;
   color: #fff;
   opacity: .7;
+  left: 50px;
 }
 #section0 .sec0-header .ico-mail{  
   background: url("../img/ico_email.svg") no-repeat ;
   position: absolute;
   width: 30px;
   height: 30px;
-  right: 35vh;
+  right: 50px;
   transition: all ease .3s;
   opacity: .7;
 }
@@ -224,6 +230,7 @@ button{cursor: pointer;background-color: transparent; border: none;}
 #section1 .left-box{/* 왼쪽박스 */
   text-align: center;
   width: 40vh;
+  padding-left: 50px;
 }
 #section1 .left-box > h1{
   display: inline-block;
@@ -251,8 +258,9 @@ button{cursor: pointer;background-color: transparent; border: none;}
   bottom: 0;
 }
 #section1 .right-box{  /* 오른쪽박스 */
-  margin-left: 5%;
-  width: 800px;
+  margin-left: 50px;
+  width: 500px;
+  padding-right: 50px;
 }
 #section1 .top-box{
   float: left;
@@ -411,12 +419,11 @@ button{cursor: pointer;background-color: transparent; border: none;}
 }
 #section3 .wrap-photo .slick-slide {
   padding: 0 10px;
-  /* 선생님질문 active로 잡을 시 검은색 못생긴 아웃라인 생성.. outline: none; */
 }
 #section3 .wrap-photo .slick-slide img{
   width: 860px;
   height: 520px;
-  /* border-radius: 10px; */
+  border-radius: 10px;
 }
 #section3 .wrap-photo{
   cursor: none;
@@ -490,7 +497,7 @@ button{cursor: pointer;background-color: transparent; border: none;}
   width: 200px;
   left: 50%;
   margin-left: -100px;
-  bottom: 40%;
+  bottom: 45%;
 }
 #section4 .wrap-typo{
   position: absolute;
@@ -522,7 +529,7 @@ button{cursor: pointer;background-color: transparent; border: none;}
 #section4 .wrap-input{
   position: absolute;
   width: 100%;
-  height: 40%;
+  height: 45%;
   bottom: 0;
   background: #333;
   display: flex;
@@ -595,15 +602,120 @@ button{cursor: pointer;background-color: transparent; border: none;}
 
 
 /************** mobile **************/
-@media screen and (max-width:1024px){}
-@media screen and (max-width:800px){}
-@media screen and (max-width:650px){
-  #section0 .sec0-header{
-    top: 20px;
+@media screen and (max-width:1200px){
+  /* section1 */
+  #section1 .sec1-bg{
+    position: absolute;
+    width: calc(100% - 200px);
+    height: calc(100% - 120px);
+    top: 60px;
+    left: 100px;
+  }
+  #section1 .left-box{
+    text-align: center;
+    width: 40vh;
+  }
+  #section1 .left-box > h1{
+    font-size: 1.7rem;
+  }
+  #section1 .right-box{
+    width: 500px;
+  }
+  #section1 .top-box{
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+  #section1 .top-box .mobile-br{
+    display: block;
+  }
+  /* section2 */
+  #section2 .wrap-link {
+    position: absolute;
+    bottom: 50px;
+    left: 70px;
+  }
+}
+@media screen and (max-width:900px){
+  /* section1 */
+  #section1 .sec1-bg{
+    width: calc(100% - 120px);
+    height: calc(100% - 60px);
+    top: 30px;
+    left: 60px;
+    display: inline-block;
+  }
+  #section1 .left-box{
+    width: 500px;
+    margin:  0 auto;
+    padding: 5% 0 0;
+  }
+  #section1 .left-box > h1{
+    font-size: 2rem;
+  }
+  #section1 .left-box > p{
+    font-size: 0.9rem;
+    padding-top: 11px;
+  }
+  #section1 .left-box > img{
+    width: 50%;
+  }
+
+  #section1 .right-box{  /* 오른쪽박스 */
+    /* margin-left: 50px; */
+    width: 100%;
+    margin: 0 auto;
+  }
+  #section1 .top-box{
+    font-size: 1.8rem;
+    color: #b6e4fe;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
   }
   
+  #section1 .bottom-box{
+    margin-top: 20px;
+    text-align: center;
+    padding: 0 10px 10% 10px;
+  }
   
-/* PUBLISHING-text */
+  /* section2 */
+  #section2 .wrap-link{
+    bottom: 30px;
+    left: 50px;
+    right: 30px;
+  }
+  #section2 .wrap-link .unit > a{
+    font-size: 2.5rem;
+    line-height: 35px;
+  }
+  #section2 .wrap-link .unit .explain{
+    line-height: 1.2rem;
+  }
+  #section2 .wrap-link .unit .explain > p{
+    color: #2d3a42;
+    opacity: .5;
+  }
+  /* section3 */
+  #section3 .wrap-photo .slick-slide img{
+    width: 560px;
+    height: 340px;
+  }
+   #section3 .wrap-txt{
+    position: absolute;
+    top: 48%;
+    left: 0;
+    right: 0;
+    margin-top: 224px;
+    text-align: center;
+  }
+  #section3 .wrap-txt > ul > li{
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width:650px){
+  
+/* section0 */
   #section0 .focus{
     font-size: 2.5rem;
     font-style: italic;
@@ -634,16 +746,48 @@ button{cursor: pointer;background-color: transparent; border: none;}
       transform: translate(-205px);
     }
   }
-
-
-
-
-    #section0 .txt{
-      font-size: 0.8rem;
-    }
-    #section0 .txt >p:nth-of-type(2){
-      font-size: 1.2rem;
-    }
+  #section0 .txt{
+    font-size: 0.8rem;
+  }
+  #section0 .txt >p:nth-of-type(2){
+    font-size: 1.2rem;
+  }
 }
-@media screen and (max-width:414px){}
+@media screen and (max-width:414px){
+/* section1 */
+#section1 .left-box{
+  width: 250px;
+}
+#section1 .left-box > h1{
+  font-size: 1.8rem;
+}
+#section1 .top-box{
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: #b6e4fe;
+  margin: 0 auto;
+  width: 99%;
+  text-align: center;
+}
+
+#section1 .bottom-box{
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+/* section2 */
+#section2 .wrap-link .unit{
+  overflow-y: hidden;
+}
+  #section2 .wrap-link{
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+  }
+  #section2 .wrap-link .unit > a{
+    font-size: 2rem;
+    line-height: 40px;
+  }
+  
+}
 @media screen and (max-width:320px){}
