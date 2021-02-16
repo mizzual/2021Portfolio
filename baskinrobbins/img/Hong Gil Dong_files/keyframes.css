@@ -1,0 +1,23 @@
+@keyframes stack1{
+0%{width:0%}
+100%{width:90%}
+}
+@keyframes stack2{
+0%{width:0%}
+100%{width:50%}
+}
+@keyframes stack3{
+0%{width:0%}
+100%{width:85%}
+}
+@keyframes stack4{
+0%{width:0%}
+100%{width:70%}
+}
+/* next,prev contact 요소들 bar 움직이는거 */
+@keyframes arrow_bar{
+    0%{transform: translate(-50%,-50%) rotate(10deg);}
+    50%{transform: translate(-50%,-50%) rotate(360deg);}
+    90%{transform: translate(-50%,-50%) rotate(-50deg);}
+    100%{ transform: translate(-50%,-50%) rotate(10deg);}
+}

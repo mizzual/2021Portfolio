@@ -780,9 +780,9 @@ button{cursor: pointer;background-color: transparent; border: none;}
 }
   #section2 .wrap-link{
     position: absolute;
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
   }
   #section2 .wrap-link .unit > a{
     font-size: 2rem;
