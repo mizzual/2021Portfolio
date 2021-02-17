@@ -50,12 +50,15 @@ function init(){
 
     // PORTFOLIO
     $("#section3 .wrap-photo > ul").slick({
+        centerMode: true,
         dots:false,
         arrows: false,
-        slidesToShow: 3,
+        slidesToShow: 1,
         slidesToScroll:1,
         variableWidth:true,
-        centerMode:true
+        autoplay: true,
+        speed: 1500,
+        autoplaySpeed: 5000
     }).on("afterChange",function(event, slick, current){
         $("#section3 .wrap-txt > ul > li").removeClass("select"); //초기화
         $("#section3 .wrap-txt > ul > li").eq(current).addClass("select");
@@ -71,8 +74,7 @@ function init(){
 
     // CONTACT
     $(document).ready(function() {
-		emailjs.init("user_Ke4lV5mxOpTcwiOkDkLOC");		
-        //"user_xxxxx"이 부분은 사용자마다 다르니 반드시 emailJS의 installation 화면을 확인
+		emailjs.init("user_Ke4lV5mxOpTcwiOkDkLOC");
         $('input[name=submit]').click(function(){       	 
           
           var templateParams = {	
@@ -83,7 +85,6 @@ function init(){
            				};
                                     	
          emailjs.send('service_0i08kep','template_cjvxks8', templateParams)
-         //emailjs.send('service ID', 'template ID', 보낼 내용이 담긴 객체)
          	    .then(function(response) {
          	       console.log('SUCCESS!', response.status, response.text);
                     alert("이메일이 보내졌습니다! ٩( ᐛ )و");

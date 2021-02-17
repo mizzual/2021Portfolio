@@ -416,7 +416,7 @@ h3{
     border: 1px solid #d1cecc;
     border-top: transparent;
     top: 26px;
-    min-width: 166px;
+    width: 99%;
 }
 .brand-family .dropdown .dropdown-content > a{
     color: #726454;

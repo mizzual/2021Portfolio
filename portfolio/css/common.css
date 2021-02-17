@@ -383,6 +383,26 @@ button{cursor: pointer;background-color: transparent; border: none;}
 }
 /* 버튼 */
 #section2{}
+#section2 .alert{
+  position: absolute;
+  text-align: center;
+  width: 300px;
+  top: 30px;
+  left: 50%;
+  margin: 0 -150px;
+  font-size: 0.8rem;
+  color: rgb(230, 102, 102);
+  z-index: 999999;
+}
+#section2 .blink{
+  -webkit-animation: blink 2s linear infinite;
+  opacity: 0;
+}
+@keyframes blink{
+  0%{opacity: .5;}
+  100%{opacity: 1;}
+}
+
 #section2 .wrap-link{
   position: absolute;
   bottom: 50px;
@@ -406,10 +426,11 @@ button{cursor: pointer;background-color: transparent; border: none;}
 }
 #section2 .wrap-link .unit .explain{
   padding: 5px;
+  font-size: 1rem;
 }
 #section2 .wrap-link .unit .explain > p{
   color: #2d3a42;
-  opacity: .5;
+  opacity: .8;
 }
 
 /********** section3 **********/
@@ -417,9 +438,18 @@ button{cursor: pointer;background-color: transparent; border: none;}
   position: relative;
   background:linear-gradient(to bottom,#98d3f3 , #e2dcd4);
 }
+
 #section3 .wrap-photo .slick-slide {
+  top: 0;
   padding: 0 10px;
+  /* transform: scale(0.8);
+  opacity: 0.3;
+  transition: all ease 0.5s; */
 }
+/* .slick-current{
+  transform: scale(1);
+  opacity: 1;
+} */
 #section3 .wrap-photo .slick-slide img{
   width: 860px;
   height: 520px;
@@ -458,18 +488,20 @@ button{cursor: pointer;background-color: transparent; border: none;}
   position: relative;
   height: 95px;
   overflow: hidden;
-  /* background: red; */
 }
 #section3 .wrap-txt > ul > li{
-  color: #4b4f52;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight:800;
   font-style: italic;
   position: absolute;
   top: 95px;
   width: 100%;
-  transition: top .5s ease-in-out;
+  transition: top .3s ease-in-out;
 }
+#section3 .wrap-txt > ul > li:nth-child(1){  color: #7e4755;}
+#section3 .wrap-txt > ul > li:nth-child(2){
+  color: #4b4f52;}
+#section3 .wrap-txt > ul > li:nth-child(3){  color: #2d3b5f;}
 #section3 .wrap-txt > ul > li > p{
   margin-top: 10px;
   font-size: 1rem;
@@ -480,17 +512,29 @@ button{cursor: pointer;background-color: transparent; border: none;}
   top: 0;
 }
 
-
-
-
-
-
-
-
-
 /********** section4 **********/
 #section4 {
   position: relative;
+}
+
+#section4 .alert{
+  position: absolute;
+  text-align: center;
+  width: 300px;
+  top: 30px;
+  left: 50%;
+  margin: 0 -150px;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  color: rgb(230, 102, 102);
+}
+#section4 .blink{
+  -webkit-animation: blink 2s linear infinite;
+}
+@keyframes blink{
+  0%{opacity: 1;}
+  50%{opacity: .5;}
+  100%{opacity: 1;}
 }
 #section4 .sec4-pic > img{
   position: absolute;
