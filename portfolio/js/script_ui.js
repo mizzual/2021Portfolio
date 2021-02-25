@@ -52,12 +52,14 @@ function init(){
     $("#section3 .wrap-photo > ul").slick({
         centerMode: true,
         dots:false,
-        arrows: false,
+        arrows: true,
+        prevArrow:'.slick-prev',
+        nextArrow:'.slick-next',
         slidesToShow: 1,
         slidesToScroll:1,
         variableWidth:true,
         autoplay: true,
-        speed: 1500,
+        speed: 1000,
         autoplaySpeed: 5000
     }).on("afterChange",function(event, slick, current){
         $("#section3 .wrap-txt > ul > li").removeClass("select"); //초기화

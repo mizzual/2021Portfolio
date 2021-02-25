@@ -173,7 +173,9 @@ button{cursor: pointer;background-color: transparent; border: none;}
   font-weight: 600;
   font-size: 1.5rem;
 }
-
+#section0 .txt > p > span{
+  color: #b45151;
+}
 #section0 .scroll{
   position: absolute;
   background: url(../img/ico_press.svg) no-repeat;
@@ -265,8 +267,8 @@ button{cursor: pointer;background-color: transparent; border: none;}
 #section1 .top-box{
   float: left;
   font-weight: 600;
-  font-size: 2rem;
-  color: #b6e4fe;
+  font-size: 1.5rem;
+  color: #fff;
   line-height: 4rem;
 }
 
@@ -359,16 +361,12 @@ button{cursor: pointer;background-color: transparent; border: none;}
 #section2 .wrap-wave .unit .wave:before{
   animation: ani_wave1 5s linear infinite;
 }
-@keyframes ani_wave1{
-  0%{transform: translateX(-500px);}
-  100%{transform: translateX(-2900px);}
-}
 #section2 .wrap-wave .unit .wave:after{
-  animation: ani_wave2 7s linear infinite;
+  animation: ani_wave2 5s linear infinite;
 }
 @keyframes ani_wave2{
-  0%{transform: translateX(0px);}
-  100%{transform: translateX(-2400px);}
+  0%{transform: translateX(-2400px);}
+  100%{transform: translateX(0px);}
 }
 
 #section2 .wrap-wave .unit .num{
@@ -386,11 +384,11 @@ button{cursor: pointer;background-color: transparent; border: none;}
 #section2 .alert{
   position: absolute;
   text-align: center;
-  width: 300px;
+  width: 500px;
   top: 30px;
   left: 50%;
-  margin: 0 -150px;
-  font-size: 0.8rem;
+  margin: 0 -250px;
+  font-size: 1rem;
   color: rgb(230, 102, 102);
   z-index: 999999;
 }
@@ -399,7 +397,7 @@ button{cursor: pointer;background-color: transparent; border: none;}
   opacity: 0;
 }
 @keyframes blink{
-  0%{opacity: .5;}
+  0%{opacity: .3;}
   100%{opacity: 1;}
 }
 
@@ -417,9 +415,7 @@ button{cursor: pointer;background-color: transparent; border: none;}
   font-size: 3.5rem;
   color: #2d3a42;
   opacity: .2;
-  height: 90px;
-  line-height: 90px;
-  /* float: left; */
+  line-height: 60px;
 }
 #section2 .wrap-link .unit > a:hover{
   opacity: 1;
@@ -431,6 +427,7 @@ button{cursor: pointer;background-color: transparent; border: none;}
 #section2 .wrap-link .unit .explain > p{
   color: #2d3a42;
   opacity: .8;
+  padding-bottom: 30px;
 }
 
 /********** section3 **********/
@@ -438,18 +435,20 @@ button{cursor: pointer;background-color: transparent; border: none;}
   position: relative;
   background:linear-gradient(to bottom,#98d3f3 , #e2dcd4);
 }
-
+#section3 .slick-track{
+  margin-bottom: 10%
+}
 #section3 .wrap-photo .slick-slide {
   top: 0;
   padding: 0 10px;
-  /* transform: scale(0.8);
+  transform: scale(0.8);
   opacity: 0.3;
-  transition: all ease 0.5s; */
+  transition: all ease 0.5s;
 }
-/* .slick-current{
-  transform: scale(1);
-  opacity: 1;
-} */
+#section3 .wrap-photo .slick-slide.slick-current{
+    transform: scale(1);
+    opacity: 1;
+}
 #section3 .wrap-photo .slick-slide img{
   width: 860px;
   height: 520px;
@@ -478,7 +477,7 @@ button{cursor: pointer;background-color: transparent; border: none;}
 }
 #section3 .wrap-txt{
   position: absolute;
-  top: 55%;
+  top: 50%;
   left: 0;
   right: 0;
   margin-top: 224px;
@@ -511,6 +510,21 @@ button{cursor: pointer;background-color: transparent; border: none;}
 #section3 .wrap-txt > ul > li.select{
   top: 0;
 }
+#section3 .slick-arrow{
+  position: absolute;
+  top: 0;
+}
+#section3 .slick-arrow:hover{
+  opacity: .5;
+}
+#section3 .slick-arrow.slick-prev{
+  top: 41%;
+  left: 10%;
+}
+#section3 .slick-arrow.slick-next{
+  top: 41%;
+  right: 10%;
+}
 
 /********** section4 **********/
 #section4 {
@@ -520,11 +534,11 @@ button{cursor: pointer;background-color: transparent; border: none;}
 #section4 .alert{
   position: absolute;
   text-align: center;
-  width: 300px;
+  width: 500px;
   top: 30px;
   left: 50%;
-  margin: 0 -150px;
-  font-size: 0.8rem;
+  margin: 0 -250px;
+  font-size: 1rem;
   line-height: 1.5rem;
   color: rgb(230, 102, 102);
 }
@@ -533,7 +547,7 @@ button{cursor: pointer;background-color: transparent; border: none;}
 }
 @keyframes blink{
   0%{opacity: 1;}
-  50%{opacity: .5;}
+  50%{opacity: .3;}
   100%{opacity: 1;}
 }
 #section4 .sec4-pic > img{
@@ -541,7 +555,7 @@ button{cursor: pointer;background-color: transparent; border: none;}
   width: 200px;
   left: 50%;
   margin-left: -100px;
-  bottom: 45%;
+  bottom: 400px;
 }
 #section4 .wrap-typo{
   position: absolute;
@@ -573,7 +587,7 @@ button{cursor: pointer;background-color: transparent; border: none;}
 #section4 .wrap-input{
   position: absolute;
   width: 100%;
-  height: 45%;
+  height: 400px;
   bottom: 0;
   background: #333;
   display: flex;
@@ -604,7 +618,7 @@ button{cursor: pointer;background-color: transparent; border: none;}
 #section4 .wrap-input > form .group > textarea{
   width: 300px;
   border: 1px solid #757575;
-  border-radius: 5px;
+  border-radius: 2px;
   color: #fff;
   background: transparent;
   font-size: 1rem;
@@ -615,7 +629,7 @@ button{cursor: pointer;background-color: transparent; border: none;}
 #section4 .wrap-input .btn{
   outline: none;
   margin-top: 15px;
-  border-radius: 5px;
+  border-radius: 2px;
   border: none;
   padding: 8px;
   width: 100%;
@@ -742,12 +756,12 @@ button{cursor: pointer;background-color: transparent; border: none;}
   }
   /* section3 */
   #section3 .wrap-photo .slick-slide img{
-    width: 560px;
-    height: 340px;
+    width: 100vw;
+    height: auto;
   }
    #section3 .wrap-txt{
     position: absolute;
-    top: 48%;
+    top: 35%;
     left: 0;
     right: 0;
     margin-top: 224px;
@@ -796,6 +810,10 @@ button{cursor: pointer;background-color: transparent; border: none;}
   #section0 .txt >p:nth-of-type(2){
     font-size: 1.2rem;
   }
+  #section4 .alert{
+    color: transparent;
+  }
+}
 }
 @media screen and (max-width:414px){
 /* section1 */
@@ -806,7 +824,7 @@ button{cursor: pointer;background-color: transparent; border: none;}
   font-size: 1.8rem;
 }
 #section1 .top-box{
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 2rem;
   color: #b6e4fe;
   margin: 0 auto;
@@ -816,7 +834,8 @@ button{cursor: pointer;background-color: transparent; border: none;}
 
 #section1 .bottom-box{
   margin-top: 10px;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+  line-height: 1.3rem;
 }
 /* section2 */
 #section2 .wrap-link .unit{
@@ -832,6 +851,11 @@ button{cursor: pointer;background-color: transparent; border: none;}
     font-size: 2rem;
     line-height: 40px;
   }
-  
-}
+  #section4 .sec4-pic > img{
+    position: absolute;
+    width: 150px;
+    left: 50%;
+    margin-left: -100px;
+    bottom: 400px;
+  }
 @media screen and (max-width:320px){}

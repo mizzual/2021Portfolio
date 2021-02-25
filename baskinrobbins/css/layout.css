@@ -455,3 +455,70 @@ h3{
     font-size: 11px;
     color: #b1adab;
 }
+@media screen and (max-width:1200px){
+    #header{
+        max-width: 1200px;
+        border: 10px solid red;
+    }
+    .top-area{
+        border-bottom: 1px solid #e2d9d6;
+    }
+    
+    .top-area:after{
+        content: '';
+        display: none;
+        border: 1px solid #333;
+        position: relative;
+    }
+        
+    .top-area .inner{
+        position: relative;
+        height: 114px;
+        padding-top: 21px;
+        margin: 0 auto;
+    }
+    .top-area .logo{
+        width: 92px;
+        height: 92px;
+        margin: 0 auto;
+    }
+    .top-area .logo > a{
+        background: url("../img/main_logo.svg") no-repeat;
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-indent: -9999px;
+    }
+    .top-area .sns, .etc{
+        position: absolute;
+        top: 50px;
+    }
+    .top-area .sns ul{
+        text-align: center;
+    }
+    .top-area .sns li{
+        display: inline-block;
+        padding-right:10px;
+    }
+    .top-area .sns li > a > img{
+        transition: all ease 0.3s;
+    }
+    .top-area .sns li > a >img:hover{
+        transform: scale(1.25);
+    }
+    .top-area .etc{
+        top: 39px;
+        right: 0;
+        height: 54px;
+        line-height: 54px;
+    }
+    .top-area .etc li{
+        float: left;
+        padding-left: 20px;
+        font-size: 11px;
+    }
+    .top-area .etc li >  a{
+        color: #4a3d39;
+        transform: skew(0.05deg);
+    }
+}

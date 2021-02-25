@@ -21,6 +21,7 @@
     <link rel="apple-touch-icon" href="pavicon_logo.svg" sizes="180x180" />
     <link rel="stylesheet" href="css/common.css" type="text/css"/>
     <link rel="stylesheet" href="css/reset.css" type="text/css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
 
     <script src="js/jquery-1.8.3.min.js"></script>
     <script src="js/jquery_ui.js"></script>
@@ -64,54 +65,58 @@
             <section id="section1">
                     <div class= "book01">
                         <ul>
-                            <li>
-                                <a href="#">장소</a>
+                            <li>장소
                                 <ul>
                                     <li>
-                                        <input id="location" placeholder="제발..가평이라고쳐주세요..">
+                                        <select class="location">
+                                            <option selection>선택하세요</option>
+                                            <option value="cun-cheon">강원도 춘천</option>
+                                            <option value="hong-cheon">강원도 홍천</option>
+                                            <option value="ga-pyung">경기도 가평</option>
+                                            <option value="namyang-ju">경기도 남양주</option>
+                                            <option value="pa-ju">경기도 파주</option>
+                                        </select>
                                     </li>
                                 </ul>
                             </li>
                         </ul>
                     </div>
-                    <div class= "book02">
+                    <div class= "book02 check ">
                         <ul>
-                            <li>
-                                <a href="#">체크인 / 체크아웃</a>
-                                <!-- 제이쿼리달력삽입예정 -->
+                            <li>체크인<br>
+                                <input type="date">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class= "book02 check">
+                        <ul>
+                            <li>체크아웃<br>
+                                <input type="date">
                             </li>
                         </ul>
                     </div>
                     <div class= "book03">
                         <ul>
-                            <li>
-                                <a>캠핑스타일</a>
-                                <div class="none-accom">
-                                    <!-- <h3>숙박시설이없는</h3>
-                                    <ul>
-                                        <li><a href="#">비박(백패킹)</a></li>
-                                        <li><a href="#">캠핑장(사이트)</a></li>
-                                        <li><a href="#">캠핑카(자차)</a></li>
-                                    </ul>
-                                </div>
-                                <div class="day-accom">
-                                    <h3>숙박시설이없는</h3>
-                                    <ul>
-                                        <li><a href="#">글램핑</a></li>
-                                        <li><a href="#">카라반</a></li>
-                                        <li><a href="#">룸숙소</a></li>
-                                    </ul> -->
-                                </div>
+                            <li>캠핑스타일
+                                <select class="camp-style">
+                                    <option selection>선택하세요</option>
+                                    <optgroup label = "숙박시설이없는">
+                                        <option value="non-day">비박(백패킹)</option>
+                                        <option value="non-site">캠핑장(사이트)</option>
+                                        <option value="non-car">캠핑카(자차)</option>
+                                    </optgroup>
+                                    <optgroup label = "숙박시설이있는">
+                                        <option value="non-day">글램핑</option>
+                                        <option value="non-site">카라반</option>
+                                        <option value="non-car">룸숙소</option>
+                                    </optgroup>
+                                </select>
                             </li>
                         </ul>
                     </div>
                     <div class= "search">
-                        <button class="search-btn">
-                            <!-- <span class="blind">검색</span> -->
-                            <img src="img/ico-05.svg">
-                        </button>
+                        <button class="search-btn" onclick="location.href='mizzual.cafe24.com/search/'" rel="검색하기"></button>
                     </div>
-                    <!-- e:booking-wrapper -->
             </section>
         </div>
     </header>
@@ -120,139 +125,127 @@
         <div class="inner">
             <h2>나의 주변 캠핑장</h2>
             <div class="sec2-wrapper">
-                <div class="slider">
+                <div class="nearby">
                     <a href="#">
                         <div class="pic">
                         <img src="img/thumbnail01.jpg" alt="캠핑장이미지"></div>
-                        <p>충남 천안시 서북구</p>
-                        <h3>무지개캠핑장</h3>
-                        <p>샤워실ㅣ탁구장ㅣ땟목체험</p>
-                        <p>금액<b>60,000</b>원 /1박</p>
+                        <div class="txt">
+                            <p>충남 천안시 서북구</p>
+                            <p>캠핑하우스</p>
+                            <p>샤워실ㅣ탁구장ㅣ땟목체험</p>
+                            <p>금액 <b>60,000</b>원 /1박</p>
+                        </div>
                     </a>
                 </div>
-                <div class="slider">
+                <div class="nearby">
                     <a href="#">
                         <div class="pic">
                         <img src="img/thumbnail02.jpg" alt="캠핑장이미지"></div>
-                        <p>충남 천안시 서북구</p>
-                        <h3>무지개캠핑장</h3>
-                        <p>샤워실ㅣ탁구장ㅣ땟목체험</p>
-                        <p>금액<b>60,000</b>원 /1박</p>
+                        <div class="txt">
+                            <p>충남 천안시 서북구</p>
+                            <p>천안무지개카라반캠핑장</p>
+                            <p>카라반ㅣ글램핑ㅣ스파ㅣ반려동물</p>
+                            <p>금액 <b>50,000</b>원 /1박</p>
+                        </div>
                     </a>
                 </div>
-                <div class="slider">
+                <div class="nearby">
                     <a href="#">
                         <div class="pic">
                         <img src="img/thumbnail03.jpg" alt="캠핑장이미지"></div>
-                        <p>충남 천안시 서북구</p>
-                        <h3>무지개캠핑장</h3>
-                        <p>샤워실ㅣ탁구장ㅣ땟목체험</p>
-                        <p>금액<b>60,000</b>원 /1박</p>
+                        <div class="txt">
+                            <p>충남 천안시 서북구</p>
+                            <p>천안가족캠핑장</p>
+                            <p>샤워실ㅣ탁구장ㅣ땟목체험</p>
+                            <p>금액 <b>30,000</b>원 /1박</p>
+                        </div>
                     </a>
                 </div>
-                <div class="slider">
+                <div class="nearby">
                     <a href="#">
                         <div class="pic">
                         <img src="img/thumbnail04.jpg" alt="캠핑장이미지"></div>
-                        <p>충남 천안시 서북구</p>
-                        <h3>무지개캠핑장</h3>
-                        <p>샤워실ㅣ탁구장ㅣ땟목체험</p>
-                        <p>금액<b>60,000</b>원 /1박</p>
-                    </a>
-                </div>
-                <div class="slider">
-                    <a href="#">
-                        <div class="pic">
-                        <img src="img/thumbnail05.jpg" alt="캠핑장이미지"></div>
-                        <p>충남 천안시 서북구</p>
-                        <h3>무지개캠핑장</h3>
-                        <p>샤워실ㅣ탁구장ㅣ땟목체험</p>
-                        <p>금액<b>60,000</b>원 /1박</p>
-                    </a>
-                </div>
-                <div class="slider">
-                    <a href="#">
-                        <div class="pic">
-                        <img src="img/thumbnail06.jpg" alt="캠핑장이미지"></div>
-                        <p>충남 천안시 서북구</p>
-                        <h3>무지개캠핑장</h3>
-                        <p>샤워실ㅣ탁구장ㅣ땟목체험</p>
-                        <p>금액<b>60,000</b>원 /1박</p>
+                        <div class="txt">
+                            <p>충남 천안시 서북구</p>
+                            <p>독립기념관캠핑장</p>
+                            <p>독립기념관무료관람ㅣ화장실ㅣ개수대</p>
+                            <p>금액 <b>60,000</b>원 /1박</p>
+                        </div>                        
                     </a>
                 </div>
             </div>
-            <!-- 좌우아이콘 -->
-            <i class="arrow-l"><img src="img/ico-01.svg"></i>
-            <i class="arrow-r"><img src="img/ico-02.svg"></i>
-            <style>
-                .bx-controls-direction .bx-prev:before{
-                    
-                }
-            </style>
         </div>
     </section>
-
-
 
     <section id="section3">
         <div class="inner">
             <h2>이벤트</h2>
-            <div class="event1">
-                <img src="img/img_event1.svg">
-            </div>
-            <div class="event2">
-                <img src="img/img_event2.svg">
-            </div>
-            <div class="event3">
-                <img src="img/img_event3.svg">
+            <div class="event-wrapper">
+                <div class="event1">
+                    <img src="img/img_event1.svg">
+                </div>
+                <div class="event2">
+                    <img src="img/img_event2.svg">
+                </div>
+                <div class="event3">
+                    <img src="img/img_event3.svg">
+                </div>
             </div>
         </div>
     </section>
     <div id="section4">
         <div class="inner">
-            <h2>스타일 별로 즐기는 나만의 캠핑</h2>\
-            <article class="beginner">
-                <p>맛있는 음식과 함께<br>몸만 오세요</p>
-                <div class="sec4-pic"><img src="img/img_beginner.png"></div>
-                <h3>초보캠핑족</h3>
-            </article>
-            <article class="expert">
-                <p>자연을 벗삼는<br>특별한 휴식</p>
-                <div class="sec4-pic"><img src="img/img_beginner.png"></div>
-                <h3>전문캠핑족</h3>
-            </article>
-            <article class="backpackers">
-                <p>생각이 많을 때<br>훌쩍 떠나는 캠핑</p>
-                <div class="sec4-pic"><img src="img/img_beginner.png"></div>
-                <h3>백패커스</h3>
-            </article>
+                <h2>스타일 별로 즐기는 나만의 캠핑</h2>
+                <div class="style-wrapper">
+                    <article class="beginner">
+                        <div class="sec4-pic"><img src="img/img_beginner.jpg"></div>
+                        <p>맛있는 음식과 함께<br>몸만 오세요</p>
+                        <h3>초보캠핑족</h3>
+                    </article>
+                    <article class="expert">
+                        <div class="sec4-pic"><img src="img/img_expert.jpg"></div>
+                        <p>자연을 벗삼는<br>특별한 휴식</p>
+                        <h3>전문캠핑족</h3>
+                    </article>
+                    <article class="backpacker">
+                        <div class="sec4-pic"><img src="img/img_backpacker.jpg"></div>
+                        <p>생각이 많을 때<br>훌쩍 떠나는 캠핑</p>
+                        <h3>백패커스</h3>
+                    </article>
+                </div>           
         </div>
     </div>
 
 
     <footer>
         <div class="inner">
-
-            <div class="cooper">
-                <img src="img/img-cooper1.svg">
-                <img src="img/img-cooper2.svg">
-                <img src="img/img-cooper3.svg">
-            </div>
-            <div class="info"></div>
-            <div class="com"></div>
-            <div class="sns">
-                <a class="kakao" href="#" target="_blank">
-                    <span class="blind">카카오톡</span>
-                </a>
-                <a class="instagram" href="#" target="_blank">
-                    <span class="blind">인스타그램</span>
-                </a>
-                <a class="youtube" href="#" target="_blank">
-                    <span class="blind">유튜브</span>
-                </a>
-                <a class="facebook" href="#" target="_blank">
-                    <span class="blind">페이스북</span>
-                </a>
+            <div class="footer-wrapper">    
+                <div class="logo">
+                    <h1><a href="index.html"><span class="blind">캠바인</span></a></h1>
+                </div>
+    
+                <div class="info">
+                    서울특별시 00구 0000로 000 통신판매업신고: 2021-서울000000호 대표자 : 전민정<br>COPYRIGHT© 2021. WWW.cambined.co.kr . ALL RIGHT RESERVED
+                </div>
+                <div class="sns">
+                    <a class="kakao" href="#" target="_blank">
+                        <span class="blind">카카오톡</span>
+                    </a>
+                    <a class="instagram" href="#" target="_blank">
+                        <span class="blind">인스타그램</span>
+                    </a>
+                    <a class="youtube" href="#" target="_blank">
+                        <span class="blind">유튜브</span>
+                    </a>
+                    <a class="facebook" href="#" target="_blank">
+                        <span class="blind">페이스북</span>
+                    </a>
+                </div>
+                <!-- <div class="cooper">
+                    <img src="img/img-cooper1.svg">
+                    <img src="img/img-cooper2.svg">
+                    <img src="img/img-cooper3.svg">
+                </div> -->
             </div>
         </div>
     </footer>
